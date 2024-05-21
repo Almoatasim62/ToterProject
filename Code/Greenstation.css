@@ -1,0 +1,462 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0; /* Reset margin */
+    padding: 0; /* Reset padding */
+    background-image: url('background.jpg.jpg'); /* Default background image */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Logo and Header */
+.logo {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: left;
+    margin: 20px;
+}
+
+.logo img {
+    height: 100px;
+    margin-right: 10px;
+}
+
+.logo div {
+    text-align: left;
+    margin-top: 10px;
+}
+
+.logo h1 {
+    font-size: 2rem;
+    color: #fff;
+    line-height: 1;
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+    .logo {
+        margin: 20px auto;
+    }
+}
+
+header {
+    text-align: center;
+    margin-top: 20px;
+    position: relative;
+}
+
+.content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.content{
+    position: absolute;
+    right: 55%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.text-container {
+    margin-bottom: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.image-container {
+    position: absolute;
+    right: -250px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.image-container img {
+    width: 200px;
+    height: auto;
+}
+
+p {
+    font-size: 3rem;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+strong {
+    font-weight: bold;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #fff;
+    color: rgba(4, 255, 0, 0.669);
+    text-decoration: none;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #f0f0f0;
+}
+
+/* Top Navigation */
+.top-nav {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1;
+}
+
+.top-nav ul {
+    list-style: none;
+}
+
+.top-nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.top-nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
+/* Specific styles for the services page */
+.services-page {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-image: url('page2.jpg.jpg'); /* Background image for the services page */
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 50px; /* Adjust as needed */
+}
+
+h2 {
+    color: #fff;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.services-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    max-width: 800px; /* Adjust as needed */
+}
+
+.service {
+    width: calc(33% - 20px); /* Adjust as needed */
+    padding: 20px;
+    background-color: rgba(6, 86, 7, 0.249);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    box-sizing: border-box; /* Include padding and border in the box size */
+}
+
+.service img {
+    max-width: 100%;
+    border-radius: 10px 10px 0 0; /* Rounded corners only at the top */
+    margin-bottom: 10px;
+}
+
+.service h3 {
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.service p {
+    color: #fff;
+    font-size: 1rem;
+}
+
+/* Specific styles for the about page */
+.about-page {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-image: url('page2.jpg.jpg'); /* Background image for the services page */
+    background-size: cover;
+    background-position: center;
+}
+
+.about-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Adjust as needed */
+}
+
+.about-content p {
+    color: #fff; /* Change font color to white */
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; /* Change font family */
+    font-size: 2rem; /* Adjust font size */
+    background-color: rgba(5, 88, 8, 0.276); /* Background color similar to service boxes */
+    padding: 50px; /* Add padding to make the box larger from right and left */
+    width: 600px;
+    text-align: center; /* Center text horizontally */
+    border-radius: 10px; /* Add border radius */
+}
+
+/* Specific styles for the contact page */
+body.contact-page {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2; /* Change background color */
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center content horizontally */
+}
+
+.contact-page .content-1 {
+    width: 100%; /* Set width to 100% of the viewport width */
+    max-width: 1200px; /* Limit maximum width */
+    padding: 50px;
+    background-image: url('background-image.jpg'); /* Add background image */
+    background-size: cover; /* Cover the entire container */
+    background-position: center; /* Center the background image */
+}
+
+.contact-page h2 {
+    font-size: 2.5rem; /* Increase font size for the page title */
+    margin-bottom: 20px;
+    text-align:left; /* Center the text */
+    color: white; /* Set font color to white */
+}
+
+
+.contact-page .contact-info {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    gap: 20px; /* Add gap between icons and details */
+    width: 100%; /* Ensure full width */
+    max-width: 800px; /* Limit maximum width */
+}
+
+.contact-page .contact-icons {
+    display: flex;
+    flex-direction: column; /* Stack icons vertically */
+    align-items: center; /* Center icons horizontally */
+    gap: 10px; /* Add gap between icons */
+}
+
+.contact-page .contact-link {
+    text-decoration: none;
+    color: white; /* Set font color to white */
+}
+
+.contact-page .contact-link img {
+    width: 50px; /* Adjust image size */
+    height: auto;
+}
+
+.contact-page .contact-details {
+    align-items: center;/* Center text */
+}
+
+.contact-page .contact-details h3 {
+    font-size: 1.5rem; /* Increase font size for titles */
+    margin: 0; /* Remove default margin */
+    color: white; /* Set font color to white */
+}
+
+.contact-page .contact-details p {
+    font-size: 1.2rem; /* Increase font size for paragraphs */
+    margin: 0; /* Remove default margin */
+    color: white; /* Set font color to white */
+}
+
+.contact-page .contact-info {
+    display: flex;
+    flex-direction: row; /* Arrange items horizontally */
+    justify-content: space-between; /* Add space between items */
+    align-items: center; /* Center items vertically */
+    width: 100%;
+    max-width: 800px;
+    margin-top: 50px; /* Add top margin for spacing */
+}
+
+.contact-page .contact-icons {
+    display: flex;
+    flex-direction: column; /* Stack icons vertically */
+    align-items: center; /* Center icons horizontally */
+}
+
+.contact-page .contact-details {
+    display: flex;
+    flex-direction: column; /* Stack details vertically */
+    align-items:flex-start; /* Align details to the right */
+}
+.contact-details{
+    position: absolute;
+    right: 55%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.login-container {
+    width: 300px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-container h2 {
+    text-align: center;
+    color: green;
+    margin-bottom: 20px;
+}
+
+.login-container label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.login-container button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-container button[type="submit"]:hover {
+    background-color: #45a049;
+}
+.signup-container {
+    width: 300px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.signup-container h2 {
+    text-align: center;
+    color: green;
+    margin-bottom: 20px;
+}
+
+.signup-container label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.signup-container input[type="text"],
+.signup-container input[type="email"],
+.signup-container input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.signup-container button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.signup-container button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* For Sign In Page */
+.login-container {
+    position: absolute;
+    left: 10%;
+    top: 70%;
+    transform: translateY(-100%);
+}
+
+/* For Sign Up Page */
+.signup-container {
+    position: absolute;
+    left: 10%;
+    top: 42%;
+    transform: translateY(-50%);
+}
+.btn {
+    padding: 10px 20px;
+    background-color: #fff;
+    color: rgba(4, 255, 0, 0.669);
+    text-decoration: none;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #f0f0f0;
+}
+
+.auth-link {
+    padding: 10px 20px;
+    background-color: #fff;
+    color: rgba(4, 255, 0, 0.669);
+    text-decoration: none;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+}
+
+.auth-link:hover {
+    background-color: #f0f0f0;
+}
